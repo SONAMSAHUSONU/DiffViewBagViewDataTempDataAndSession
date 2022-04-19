@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    string str = (string)ViewData["Fname"];//here must to do typecasting using string to convert the data
+    string str1 = ViewBag.Lname;//it is Dynamic Type so no need to do typecasting
+}
+
+<h2>Index</h2>
+
+<p>ViewData: @str, @ViewData["Lname"]</p>
+<p>ViewBag: @str1, @ViewBag.Fname</p>
+//both are form the same data dictonary object then can interchange the value also, How we can retrive the value of the ViewData and ViewBag.
